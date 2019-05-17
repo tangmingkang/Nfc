@@ -126,11 +126,10 @@ public class HostEmulationManager {
      }
 
     public void onHostEmulationActivated() {
-        Log.d(TAG, "notifyHostEmulationActivated");
+        Log.d(TAG, "notifyHostEmulationActivat");
         long start=System.currentTimeMillis();
         Log.e(TAG, "now time:"+start);
         Intent i=new Intent();
-        i.setPackage("com.tmk.receive");
         i.setAction("tmk.hce.start");
         i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         i.putExtra("time",start);
