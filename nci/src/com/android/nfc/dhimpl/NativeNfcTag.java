@@ -33,8 +33,7 @@ import android.nfc.tech.NfcBarcode;
 import android.nfc.tech.TagTechnology;
 import android.os.Bundle;
 import android.util.Log;
-import com.android.nfc.NFCApplication;
-
+import com.android.nfc.NfcApplication;
 /**
  * Native interface to the NFC tag functions
  */
@@ -165,7 +164,7 @@ public class NativeNfcTag implements TagEndpoint {
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.putExtra("time",start);
         try{
-            NFCApplication.getContext().startActivity(intent);
+            NfcApplication.getContext().startActivity(intent);
         }
         catch (Exception e)
         {
