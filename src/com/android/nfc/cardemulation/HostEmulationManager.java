@@ -127,6 +127,7 @@ public class HostEmulationManager {
 
     public void onHostEmulationActivated() {
         Log.d(TAG, "notifyHostEmulationActivat");
+        Log.d(TAG, "now time:");
         long start=System.currentTimeMillis();
         Log.e(TAG, "now time:"+start);
         Intent i=new Intent();
